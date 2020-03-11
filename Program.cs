@@ -10,11 +10,15 @@ using Microsoft.Extensions.Logging;
 namespace WebApplication1
 {
     public class Program
-    {
+    { /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="args"></param>
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-        }
+            var test = "FDfd";
+        } 
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
